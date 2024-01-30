@@ -1,0 +1,19 @@
+.ship-title{
+    background-color: #191C24;
+    height: 60px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    color: #EB1616;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}

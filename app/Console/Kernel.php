@@ -10,9 +10,12 @@ class Kernel extends ConsoleKernel
     /**
      * Define the application's command schedule.
      */
+    protected $commands = [
+        \App\Console\Commands\FetchHolidays::class,
+    ];
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        $schedule->command('fetch:holidays')->dailyAt('02:00');
     }
 
     /**

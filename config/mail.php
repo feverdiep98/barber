@@ -15,6 +15,7 @@ return [
 
     'default' => env('MAIL_MAILER', 'smtp'),
 
+
     /*
     |--------------------------------------------------------------------------
     | Mailer Configurations
@@ -99,8 +100,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', '007phatdiep@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'phat'),
     ],
 
     /*

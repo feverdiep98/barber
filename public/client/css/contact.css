@@ -1,0 +1,26 @@
+.contact-detail .detail .title{
+    margin-left: 30px;
+    text-align: center;
+}
+.contact-detail .detail .icon-box{
+    display: flex;
+    padding-left: 100px;
+}
+.contact-detail .detail .icon-box .box-1{
+    margin: 100px;
+}
+.contact-detail .detail .icon-box .box-1 .address h1{
+    font-size: 20px;
+}
+.contact-detail .detail .icon-box .box-1 .mail h1{
+    font-size: 20px;
+}
+.contact-detail .detail .icon-box .box-2 .time h1{
+    font-size: 20px;
+}
+.contact-detail .detail .icon-box .box-2 .phone h1{
+    font-size: 20px;
+}
+.contact-detail .detail .icon-box .box-2{
+    margin: 100px;
+}

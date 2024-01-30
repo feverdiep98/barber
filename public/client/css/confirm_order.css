@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.contact-info {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+.information_order{
+  align-items: center;
+}
+.order{
+  align-items: center;
+  display: flex;
+}
+.order_detail{
+  display: flex;
+}
+.information_product{
+  margin-left: 20px ;
+}
+.price_product p{
+  margin-left: 200px;
+}
+.total{
+  margin-top: 20px;
+  text-align: end;
+}
+.line{
+    height:1px;
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+    background:#ddd;
+}
+.line-small{
+    height:1px;
+    width:40%;
+    margin-top:10px;
+    margin-bottom:10px;
+    background:#ddd;
+    margin-left: 360px;
+}
+.total_price{
+  font-size: 30px;
+}
+.infomation_delivery{
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info{
+  display: flex;
+  justify-content: center;
+}
+.contact-info {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* căng giữa theo chiều ngang */
+  justify-content: center; /* căng giữa theo chiều dọc */
+  text-align: center; /* căng giữa văn bản trong phần tử p */
+}
+
+.contact-info p {
+  margin: 0; /* Loại bỏ margin mặc định của các phần tử p */
+}
+.background_top{
+  background-color: #333;
+  height: 300px;
+  max-width: 1200px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.title_info{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.fa-circle-check {
+  font-size: 100px; /* Điều chỉnh kích thước của icon */
+}
+.btn{
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e23d75;
+  font-size: 25px;
+  color: #333;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.web{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+.btn,
+.view {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.view {
+  color: #005bc5;
+  text-decoration: none;
+}
+

@@ -2,6 +2,19 @@
 
 namespace App\Providers;
 
+use App\Events\BookingSuccess;
+use App\Events\CheckUserSwitchStatus;
+use App\Events\OrderCancelled;
+use App\Events\OrderCompleted;
+use App\Events\OrderConfirmed;
+use App\Events\OrderSuccessEvent;
+use App\Listeners\SendBookingConfirmationEmail;
+use App\Listeners\SendCompletedOrderEmail;
+use App\Listeners\SendEmailToAdminWhenOrderSuccess;
+use App\Listeners\SendEmailToCustomerWhenOrderSuccess;
+use App\Listeners\SendOrderCancelledEmail;
+use App\Listeners\SendOrderConfirmationEmail;
+use App\Listeners\UserSwitchStatusListener;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -15,8 +28,27 @@ class EventServiceProvider extends ServiceProvider
      * @var array<class-string, array<int, class-string>>
      */
     protected $listen = [
+        BookingSuccess::class => [
+            SendBookingConfirmationEmail::class,
+        ],
         Registered::class => [
             SendEmailVerificationNotification::class,
+        ],
+        OrderSuccessEvent::class => [
+            SendEmailToCustomerWhenOrderSuccess::class,
+            SendEmailToAdminWhenOrderSuccess::class,
+        ],
+        OrderConfirmed::class => [
+            SendOrderConfirmationEmail::class,
+        ],
+        OrderCompleted::class => [
+            SendCompletedOrderEmail::class,
+        ],
+        OrderCancelled::class => [
+            SendOrderCancelledEmail::class,
+        ],
+        CheckUserSwitchStatus::class => [
+            UserSwitchStatusListener::class,
         ],
     ];
 
